@@ -1,0 +1,11 @@
+{
+  "name": "laegue-types",
+  "version": "0.0.1",
+  "description": "types package for league client",
+  "private": true,
+  "license": "ISC",
+  "types": "index.d.ts",
+  "files": [
+    "*.d.ts"
+  ]
+}
