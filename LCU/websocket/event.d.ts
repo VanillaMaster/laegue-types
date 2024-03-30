@@ -1,23 +1,25 @@
 declare namespace League {
     namespace LCU {
-
-        interface CreateEvent<T> {
-            data: T;
-            uri: string;
-            eventType: 'Create';
+        namespace websocket {
+            
+            interface CreateEvent<T> {
+                data: T;
+                uri: string;
+                eventType: 'Create';
+            }
+    
+            interface UpdateEvent<T> {
+                data: T;
+                uri: string;
+                eventType: 'Update';
+            }
+            
+            interface DeleteEvent<T> {
+                data: T;
+                uri: string;
+                eventType: 'Delete';
+            }
+            
         }
-
-        interface UpdateEvent<T> {
-            data: T;
-            uri: string;
-            eventType: 'Update';
-        }
-        
-        interface DeleteEvent<T> {
-            data: T;
-            uri: string;
-            eventType: 'Delete';
-        }
-
     }
 }
